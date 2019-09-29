@@ -1,0 +1,43 @@
+@import-normalize;
+@import "../../assets/styles/vendors/grid.css";
+@import "../../assets/styles/typography.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+:root {
+    /*  */
+    --primary: #2196F3;
+    --textPrimary: #4A4A4A;
+    --gray: #A0B0B9;
+    --white: #fff;
+
+    /*  */
+    --base-link-color: var(--primary);
+
+    /*  */
+    --font-family: 'Open Sans', sans-serif;
+    --headings-font-family: var(--font-family);
+    --base-font-weight: 600;
+    --line-height-base: 1.5;
+    --font-size: 12px;
+
+    /*  */
+    --box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    --border-radius: 5px;
+    --border-color: #DFE5EC;
+}
+
+body {
+    background-color: #E5E5E5;
+    font-family: var(--font-family);
+    line-height: var(--line-height-base);
+    font-size: var(--font-size);
+}
+
+.preloader-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 100px;
+}

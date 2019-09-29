@@ -1,0 +1,28 @@
+.ticket-card {
+    padding: 20px 12px;
+    margin-top: 20px;
+}
+
+.ticket-card__header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.ticket-card__price {
+    color: var(--primary);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.segment-route__item-title {
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+    color: var(--gray);
+}
+
+.ticket-card__body .segment-route:not(:last-child) {
+    margin-bottom: 15px;
+}

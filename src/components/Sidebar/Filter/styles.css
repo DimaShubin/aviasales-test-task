@@ -1,0 +1,106 @@
+/* .custom-control {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding-left: 26px;
+    margin: 0 20px 30px 0;
+}
+
+@media (min-width: "768px") {
+    .custom-control {
+        padding-left: 45px;
+    }
+} */
+
+.custom-control .custom-control__indicator {
+    transition: border-color 0.3s, background-color 0.3s, box-shadow 0.3s;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    position: relative;
+    border: 1px solid #9ABBCE;
+    display: inline-block;
+}
+
+.custom-control__label {
+    transition: background-color 0.3s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    padding-left: 20px;
+}
+
+.custom-control__label:hover {
+    background-color: #F1FCFF;
+}
+
+.custom-control__input {
+    position: fixed;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: -1;
+}
+
+.custom-control__text {
+    margin-left: 10px;
+}
+
+.custom-control__input:checked~.custom-control__indicator:before,
+.custom-control__input:checked~.custom-control__indicator:after {
+    opacity: 1;
+}
+
+.custom-control__input:checked~.custom-control__indicator,
+.custom-control__input:checked~.custom-control__indicator {
+    border-color: var(--primary);
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.custom-control__indicator {
+    z-index: 1;
+}
+
+.custom-control__indicator:before {
+    transition: opacity 0.3s;
+    width: 8px;
+    height: 6px;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: rotate(-45deg);
+    border: 1px solid var(--primary);
+    border-width: 0 0 2px 2px;
+    margin: -5px 0 0 -6px;
+}
+
+@media (min-width: 768px) {
+    .custom-control__indicator:before {
+        width: 11px;
+        height: 6px;
+        border-width: 0 0 2px 2px;
+        margin: -5px 0 0 -5px;
+    }
+}
+
+.filter__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.filter__title {
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+
+.sidebar .content-holder {
+    padding: 20px 0;
+}
